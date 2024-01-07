@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goody</title>
+    <style>
+        section {
+            height: 1000px;
+            display: flex;
+            color: white;
+        }
+
+        .section1 {
+            background: url(foodbackground.jpg);
+            background-size: 100%;
+        }
+        .left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 10%;
+    padding: 10px 15px;
+    margin: auto 6px;
+}
+
+.left img {
+    display: block;
+    margin: auto;
+    width: 30%;
+    filter: invert();
+}
+
+.left div {
+    text-align: center;
+    font-size: 30px;
+    line-height: 32px;
+    color: hotpink;
+}
+
+.right {
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 46%;
+    right: 40px;
+    top: 16px;
+    position: absolute;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    margin: auto 0px;
+    font-size: 20px;
+}
+
+.navbar li a button {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    color: rgb(245, 156, 67);
+}
+
+.navbar li a button:hover {
+    color: black;
+    background-color: white;
+}
+
+.navbar li a img {
+    position: absolute;
+    width: 5%;
+    top: 7px;
+    right: 20px;
+    filter: invert();
+}
+
+        .content {
+            display: block;
+            /* border: 2px solid red; */
+            line-height: 36px;
+            margin: 200px 47px;
+            position: absolute;
+        }
+
+        .content div {
+            text-align: justify;
+            line-height: 60px;
+            font-size: 57px;
+            font-weight: bold;
+            color: #FFC107;
+        }
+
+        #para {
+            color: #E1F5FE;
+            font-size: large;
+            padding: 28px 4px;
+        }
+
+        .content button {
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            font-size: 15px;
+            padding: 6px 35px;
+            margin: 53px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .content button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .section2 {
+            background: url(oneplatter.jpg);
+            background-size: 110%;
+        }
+
+        .left1 {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            padding: 4px 54px;
+            margin: 60px 10px;
+        }
+
+        .left1 h3 {
+            color: #C2185B;
+            font-family: cursive;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .left1 h1 {
+            color: black;
+            font-size: 54px;
+            line-height: 49px;
+        }
+
+        .left1 p {
+            color: black;
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+        .left1 button {
+            color: white;
+            border: 2px solid red;
+            padding: 10px 51px;
+            margin: 17px 25px;
+            border-radius: 25px;
+            background-color: #C2185B;
+        }
+
+        .left1 button:hover {
+            color: black;
+            background-color: rgb(235, 173, 173);
+            cursor: pointer;
+        }
+
+        .right1 {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            right: 20px;
+            position: absolute;
+            padding: 4px 54px;
+            margin: 60px 10px;
+        }
+
+        .right1 h3 {
+            color: #C2185B;
+            font-family: cursive;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .right1 h1 {
+            color: black;
+            font-size: 54px;
+            line-height: 44px;
+        }
+
+        .right1 p {
+            color: black;
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+        .right1 button {
+            color: white;
+            border: 2px solid red;
+            padding: 10px 51px;
+            margin: 17px 25px;
+            border-radius: 25px;
+            background-color: #C2185B;
+        }
+
+        .right1 button:hover {
+            color: black;
+            background-color: rgb(235, 173, 173);
+            cursor: pointer;
+        }
+
+        .section3 {
+            background: url(plates.jpg);
+            background-size: 100%;
+        }
+
+        #center {
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 36%;
+            margin: 66px 437px;
+            position: absolute;
+            text-align: center;
+            /* box-sizing: border-box; */
+        }
+        .center div{
+            font-family: cursive;
+            color: #C2185B;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .center h1{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .center h1:hover{
+            color: #a95b85;
+        }
+
+        .box {
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+            display: flex;
+            width: 258%;
+            padding: 314px 0px;
+            margin: 0px 1px;
+        }
+
+        .box1 {
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 10%;
+            width: 111px;
+            height: 251px;
+            padding: 50px 60px;
+            margin: auto 26px;
+        }
+
+        .box2 {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            width: 111px;
+            height: 251px;
+            padding: 50px 60px;
+            margin: auto 62px;
+        }
+
+        .box3 {
+            /* border: 2px solid green; */
+            display: inline-block;
+            width: 111px;
+            height: 251px;
+            padding: 50px 60px;
+            margin: auto;
+        }
+
+        .box4 {
+            /* border: 2px solid pink; */
+            display: inline-block;
+            width: 111px;
+            height: 251px;
+            padding: 50px 60px;
+            margin: auto;
+        }
+
+        .box5 {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            width: 111px;
+            height: 251px;
+            padding: 50px 60px;
+            margin: auto 26px;
+        }
+
+        .box h3 {
+            color: #9CCC65;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 25px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        .box button {
+            border: 2px solid darkred;
+            border-radius: 6px;
+            padding: 7px 21px;
+            margin: 282px -16px;
+            cursor: pointer;
+            color: white;
+            background-color: #f41269;
+        }
+
+        .box button:hover {
+            border: 2px solid black;
+            color: black;
+            background-color: rgb(245, 173, 173);
+        }
+        .rs{
+            color: rgb(204, 24, 114);
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section1">
+        <header>
+            <div class="left">
+                <img src="foodlogo.webp" alt="">
+                <div>goodFood</div>
+            </div>
+            <div class="right">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="Online Order" target="_blank"><button>Online Order</button></a></li>
+                    <li><a href="#"><img src="cart.png" alt=""></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div>Healthy Diet <br> Everyday</div>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolores eaque voluptates <br> eveniet
+                illo quasi
+                unde nulla perferendis! Esse labore quod culpa illo assumenda <br> repellat nulla expedita magni provident?
+                Neque, qui eligendi animi tempore rerum <br> minima! </p>
+            <a href="View Menu" target="_blank" class="menu"><button>View Menu</button></a>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="left1">
+            <h3>DELIVERY</h3>
+            <h1><b>Choose what you <br> want and select <br> time</b></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Dolorem impedit quos incidunt consequuntur
+                dignissimos <br> nemo totam, eligendi porro accusantium, commodi cupiditate <br> libero quidem eos
+                praesentium. Magni veniam at sit <br> beatae similique necessitatibus,<br> non a nihil sapiente quos
+                officia temporibus <br> praesentium!</p>
+            <button>Order Online</button>
+        </div>
+        <div class="right1">
+            <h3>REWARDS</h3>
+            <h1><b>Earn points every <br> time you order <br> online</b></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Dolorem impedit quos incidunt consequuntur
+                dignissimos <br> nemo totam, eligendi porro accusantium, commodi cupiditate <br> libero quidem eos
+                praesentium. Magni veniam at sit <br> beatae similique necessitatibus,<br> non a nihil sapiente quos
+                officia temporibus <br> praesentium!</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <section class="section3">
+        <header>
+            <div id="center">
+                <div class="center">
+                    <div>SPECIALS COMBO</div>
+                    <h1>Our Best Sellers</h1>
+                </div>
+            </div>
+        </header>
+        <div class="box">
+            <div class="box1">
+                <h3>Paneer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="rs">25$</div>
+                <button>Order Now</button>
+            </div>
+            <div class="box2">
+                <h3>Noodles</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="rs">15$</div>
+                <button>Order Now</button>
+            </div>
+            <div class="box3">
+                <h3>omlett</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="rs">5$</div>
+                <button>Order Now</button>
+            </div>
+            <div class="box4">
+                <h3>Daal</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="rs">20$</div>
+                <button>Order Now</button>
+            </div>
+            <div class="box5">
+                <h3>Non-veg</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <div class="rs">30$</div>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
